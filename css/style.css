@@ -66,20 +66,37 @@ body {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 600px;
+  /* width: 600px; */
+  max-width: 600px;
+  width: 80%;
   height: 400px;
   border-radius: 20px;
   background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
+    text-align: center;
+    line-height: 50px;
+    font-family: "Pretendard";
+    font-size: 18px;
 }
-
+.modal-main strong {
+  color: rgb(14, 0, 216);
+  background: linear-gradient(to top, rgb(163, 226, 255) 50%, transparent 50%);
+}
+.modal-main a {
+  color: rgb(56 43 203);
+  background: linear-gradient(to top, rgb(163 163 163) 50%, transparent 50%);
+  text-decoration: underline;
+}
 .modal-close {
   position: absolute;
-  right: 10px;
-  top: 10px;
+  right: 20px;
+  top: 20px;
+  width: 26px;
+  height: 26px;
   cursor: pointer;
+  border: none;
 }
 .fadeOut {
   animation: fadeOut 0.3s forwards;
@@ -979,5 +996,12 @@ body {
   }
   .footer-br {
     display: block;
+  }
+}
+@media screen and (max-width: 470px) {
+.modal-main {
+  height: 360px;
+      line-height: 38px;
+      font-size: 15px;
   }
 }
